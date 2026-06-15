@@ -1,0 +1,19 @@
+{
+  "name": "@nanoolabs/css",
+  "version": "0.1.0",
+  "description": "High-performance CSS foundation for Nanoo Labs",
+  "scripts": {
+    "build": "lightningcss --minify --bundle --targets '>= 0.25%' src/main.css -o dist/nanoo.min.css",
+    "dev": "lightningcss --bundle --watch src/main.css -o dist/nanoo.css"
+  },
+  "keywords": [
+    "nanoo",
+    "css",
+    "design-system"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lightningcss-cli": "^1.32.0"
+  }
+}
