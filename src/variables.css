@@ -1,0 +1,70 @@
+/* Nanoo Variables */
+:root {
+  /* Colors */
+  --nl-color-primary: #00ffff;
+  --nl-color-primary-soft: #00e5e5;
+  --nl-color-primary-deep: #00cccc;
+  --nl-color-on-primary: #000000;
+  --nl-color-ink: #f2f2f2;
+  --nl-color-ink-strong: #ffffff;
+  --nl-color-body: #bdbdbd;
+  --nl-color-mute: #8b949e;
+  --nl-color-border: #1f2937;
+  --nl-color-border-soft: #374151;
+  --nl-color-canvas: #050505;
+  --nl-color-canvas-soft: #0a0a0a;
+  --nl-color-canvas-text-soft: #f5f6f7;
+
+  /* Spacing */
+  --nl-space-xxs: 2px;
+  --nl-space-xs: 4px;
+  --nl-space-sm: 8px;
+  --nl-space-md: 12px;
+  --nl-space-lg: 16px;
+  --nl-space-xl: 20px;
+  --nl-space-2xl: 24px;
+  --nl-space-3xl: 32px;
+  --nl-space-4xl: 40px;
+  --nl-space-5xl: 48px;
+  --nl-space-6xl: 64px;
+
+  /* Radius */
+  --nl-radius-none: 0px;
+  --nl-radius-xs: 4px;
+  --nl-radius-sm: 6px;
+  --nl-radius-md: 8px;
+  --nl-radius-pill: 9999px;
+  --nl-radius-full: 9999px;
+
+  /* Typography Families */
+  --nl-font-sans: "Geist Sans", system-ui, sans-serif;
+  --nl-font-mono: "Geist Mono", monospace;
+
+  /* Typography - Display XL */
+  --nl-display-xl-size: clamp(2.5rem, 8vw, 4.5rem);
+  --nl-display-xl-weight: 800;
+  --nl-display-xl-lh: 0.9;
+  --nl-display-xl-ls: -0.04em;
+
+  /* Typography - Display LG */
+  --nl-display-lg-size: clamp(1.5rem, 5vw, 2.5rem);
+  --nl-display-lg-weight: 700;
+  --nl-display-lg-lh: 1.1;
+  --nl-display-lg-ls: -0.02em;
+
+  /* Typography - Body MD */
+  --nl-body-md-size: 16px;
+  --nl-body-md-weight: 400;
+  --nl-body-md-lh: 26px;
+
+  /* Typography - Code SM */
+  --nl-code-sm-size: 13px;
+  --nl-code-sm-weight: 400;
+  --nl-code-sm-lh: 18px;
+
+  /* Structural Aliases */
+  --nl-canvas: var(--nl-color-canvas);
+  --nl-fg: var(--nl-color-ink);
+  --nl-primary: var(--nl-color-primary);
+  --nl-hairline: 1px solid var(--nl-color-border);
+}
