@@ -1,0 +1,89 @@
+@import "./reset.css";
+@import "./variables.css";
+
+/* 
+  Nanoo UI Components 
+*/
+
+.nl-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--nl-space-lg);
+  padding-right: var(--nl-space-lg);
+}
+
+.nl-container-md { max-width: 48rem; }
+.nl-container-lg { max-width: 64rem; }
+
+/* Buttons */
+.nl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--nl-space-md) var(--nl-space-2xl);
+  font-family: var(--nl-font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--nl-radius-md);
+  border: none;
+  text-decoration: none;
+}
+
+.nl-btn-primary {
+  background-color: var(--nl-color-primary);
+  color: var(--nl-color-on-primary);
+}
+
+.nl-btn-primary:hover {
+  background-color: var(--nl-color-primary-soft);
+}
+
+.nl-btn-ghost {
+  background-color: transparent;
+  border: var(--nl-hairline);
+  color: var(--nl-color-mute);
+}
+
+.nl-btn-ghost:hover {
+  color: var(--nl-color-primary);
+  border-color: var(--nl-color-primary);
+}
+
+/* Cards */
+.nl-card {
+  background-color: var(--nl-color-canvas-soft);
+  border: var(--nl-hairline);
+  padding: var(--nl-space-2xl);
+  border-radius: var(--nl-radius-md);
+}
+
+/* Text Utilities */
+.nl-display-xl {
+  font-size: var(--nl-display-xl-size);
+  font-weight: var(--nl-display-xl-weight);
+  line-height: var(--nl-display-xl-lh);
+  letter-spacing: var(--nl-display-xl-ls);
+  font-family: var(--nl-font-sans);
+}
+
+.nl-text-cyan { color: var(--nl-color-primary); }
+.nl-text-mute { color: var(--nl-color-mute); }
+.nl-text-code { 
+  font-family: var(--nl-font-mono);
+  font-size: var(--nl-code-sm-size);
+  color: var(--nl-color-primary-soft);
+}
+
+/* Links */
+.nl-link {
+  color: inherit;
+  text-decoration-color: var(--nl-color-border);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.nl-link:hover {
+  text-decoration-color: var(--nl-color-primary);
+}
