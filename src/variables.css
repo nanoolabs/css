@@ -15,24 +15,24 @@
   --nl-color-canvas-soft: #0a0a0a;
   --nl-color-canvas-text-soft: #f5f6f7;
 
-  /* Spacing */
-  --nl-space-xxs: 2px;
-  --nl-space-xs: 4px;
-  --nl-space-sm: 8px;
-  --nl-space-md: 12px;
-  --nl-space-lg: 16px;
-  --nl-space-xl: 20px;
-  --nl-space-2xl: 24px;
-  --nl-space-3xl: 32px;
-  --nl-space-4xl: 40px;
-  --nl-space-5xl: 48px;
-  --nl-space-6xl: 64px;
+  /* Spacing (REM) */
+  --nl-space-xxs: 0.125rem;
+  --nl-space-xs: 0.25rem;
+  --nl-space-sm: 0.5rem;
+  --nl-space-md: 0.75rem;
+  --nl-space-lg: 1rem;
+  --nl-space-xl: 1.25rem;
+  --nl-space-2xl: 1.5rem;
+  --nl-space-3xl: 2rem;
+  --nl-space-4xl: 2.5rem;
+  --nl-space-5xl: 3rem;
+  --nl-space-6xl: 4rem;
 
-  /* Radius */
-  --nl-radius-none: 0px;
-  --nl-radius-xs: 4px;
-  --nl-radius-sm: 6px;
-  --nl-radius-md: 8px;
+  /* Radius (REM) */
+  --nl-radius-none: 0;
+  --nl-radius-xs: 0.25rem;
+  --nl-radius-sm: 0.375rem;
+  --nl-radius-md: 0.5rem;
   --nl-radius-pill: 9999px;
   --nl-radius-full: 9999px;
 
@@ -40,7 +40,7 @@
   --nl-font-sans: "Geist Sans", system-ui, sans-serif;
   --nl-font-mono: "Geist Mono", monospace;
 
-  /* Typography - Display XL */
+  /* Typography Sizes (REM) */
   --nl-display-xl-size: clamp(2.5rem, 8vw, 4.5rem);
   --nl-display-xl-weight: 800;
   --nl-display-xl-lh: 0.9;
@@ -53,14 +53,14 @@
   --nl-display-lg-ls: -0.02em;
 
   /* Typography - Body MD */
-  --nl-body-md-size: 16px;
+  --nl-body-md-size: 1rem;
   --nl-body-md-weight: 400;
-  --nl-body-md-lh: 26px;
+  --nl-body-md-lh: 1.625rem;
 
   /* Typography - Code SM */
-  --nl-code-sm-size: 13px;
+  --nl-code-sm-size: 0.8125rem;
   --nl-code-sm-weight: 400;
-  --nl-code-sm-lh: 18px;
+  --nl-code-sm-lh: 1.125rem;
 
   /* Structural Aliases */
   --nl-canvas: var(--nl-color-canvas);
