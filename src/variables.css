@@ -1,4 +1,5 @@
-/* Nanoo Variables */
+/* Nanoo Variables
+   REM throughout: accessible, scales with user font-size preference */
 :root {
   /* Colors */
   --nl-color-primary: #00ffff;
@@ -53,14 +54,34 @@
   --nl-display-lg-ls: -0.02em;
 
   /* Typography - Body MD */
-  --nl-body-md-size: 1rem;
+  --nl-body-md-size: 1rem;      /* 16px */
   --nl-body-md-weight: 400;
-  --nl-body-md-lh: 1.625rem;
+  --nl-body-md-lh: 1.625rem;  /* 26px */
 
   /* Typography - Code SM */
-  --nl-code-sm-size: 0.8125rem;
+  --nl-code-sm-size: 0.8125rem; /* 13px */
   --nl-code-sm-weight: 400;
-  --nl-code-sm-lh: 1.125rem;
+  --nl-code-sm-lh: 1.125rem;  /* 18px */
+
+  /* Typography - H3 */
+  --nl-h3-size: clamp(1.25rem, 3vw, 1.5rem); /* 20-24px */
+  --nl-h3-weight: 600;
+  --nl-h3-lh: 1.3;
+
+  /* Typography - H4 */
+  --nl-h4-size: 1.125rem;  /* 18px */
+  --nl-h4-weight: 600;
+  --nl-h4-lh: 1.4;
+
+  /* Typography - H5 */
+  --nl-h5-size: 1rem;      /* 16px */
+  --nl-h5-weight: 600;
+  --nl-h5-lh: 1.5;
+
+  /* Typography - H6 */
+  --nl-h6-size: 0.875rem;  /* 14px */
+  --nl-h6-weight: 600;
+  --nl-h6-lh: 1.5;
 
   /* Structural Aliases */
   --nl-canvas: var(--nl-color-canvas);
