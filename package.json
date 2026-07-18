@@ -20,7 +20,7 @@
   },
   "scripts": {
     "build": "lightningcss --minify --bundle --targets '>= 0.25%' src/main.css -o dist/nanoo.min.css",
-    "dev": "lightningcss --bundle --watch src/main.css -o dist/nanoo.css"
+    "dev": "lightningcss --bundle src/main.css -o dist/nanoo.css"
   },
   "keywords": [
     "nanoo",
