@@ -1,36 +1,75 @@
 # @nlbs/css [⌐■_■]
 
-> CSS foundation for the Nanoo Labs ecosystem.
+> CSS foundation for the Nanoo Labs ecosystem. Design tokens, resets, and utility component built on LightningCSS.
+
+` pnpm ` ` LightningCSS ` ` CSS Custom Properties ` ` Design Tokens `
 
 ## Overview
 
-This package provides the core visual identity for Nanoo Labs, including resets, design tokens as CSS variables, and essential UI utilities. Built with performance in mind using LightningCSS.
+This package provides the core visual identity for Nanoo Labs — minimal CSS reset, design tokens as CSS custom properties, and essential UI components.
 
-## Installation
+## Architecture & Tech Stack
 
-```bash
-pnpm add @nlbs/css
-# or
-npm install @nlbs/css
-```
+- **Build:** LightningCSS CLI (`lightningcss-cli`) — bundling, minification, autoprefix via browser targets.
+- **Tokens:** CSS custom properties (`--nl-*`) — colors, spacing (REM), radius, typography.
+- **Components:** BEM-like `nl-*` classes — container, button, card, text utilities
+- **Themes:** Dark-first with light override via `@media` + `[data-theme]`.
+- **Zero runtime:** No pre-processor, no framework. Output is static CSS.
 
 ## Usage
 
-### In Modern Frameworks (Astro, Vite, Next.js, etc.)
-
-Install the package and import it in your main entry point:
+```bash
+pnpm add @nlbs/css
+```
 
 ```javascript
 import "@nlbs/css"
 ```
 
-### Via CDN (Unpkg)
-
-For quick prototyping without a build step:
+Or via CDN for quick prototyping:
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/@nlbs/css" />
 ```
+
+## Project Structure
+
+```
+src/
+├── main.css            # Entry — imports all modules
+├── reset.css           # Minimal reset
+├── variables.css       # Static tokens: spacing, radius, typography
+├── themes/
+│   ├── dark.css        # Color tokens (default)
+│   └── light.css       # Light overrides (see themes/README.md)
+├── layout.css          # Container classes
+├── typography.css      # Headings, text utils, links
+├── button.css          # Button variants
+└── card.css            # Card component
+```
+
+## Theming
+
+Dark by default (`:root`). Light mode via `@media (prefers-color-scheme)` + `[data-theme="light"]`.
+See [themes/README.md](./src/themes/README.md) for the full palette tablee.
+
+## Development & Ops
+
+- **Build prod:** `pnpm build` — minify bundle → `dist/nanoo.min.css`
+- **Dev:** `pnpm dev` — unminified bundle → `dist/nanoo.css`
+- **Targets:** `last 2 versions` (via lightningcss `--targets`)
+
+---
+
+## Nanoo Labs Ecosystem
+
+Part of the [nanoolabs.dev](https://nanoolabs.dev) ecosystems. Keep design tokens and component contracts in sync with consuming repos.
+
+## Contributing
+
+1. Branch from `main` with `refactor/name-refactor` naming.
+2. Commit messages follow Conventional Commits (e.g., `refactor: clean up style component button`).
+3. Rebuild before pushing: `pnpm build`.
 
 ## License
 
