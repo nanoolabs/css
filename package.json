@@ -1,6 +1,6 @@
 {
   "name": "@nlbs/css",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "High-performance CSS foundation for Nanoo Labs",
   "main": "dist/nanoo.min.css",
   "unpkg": "dist/nanoo.min.css",
