@@ -11,8 +11,8 @@
     --nl-color-mute: #6b7280;
     --nl-color-border: #d1d5db;
     --nl-color-border-soft: #e5e7eb;
-    --nl-color-canvas: #ffffff;
-    --nl-color-canvas-soft: #f9fafb;
+    --nl-color-canvas: #f5f5f5;
+    --nl-color-canvas-soft: #ffffff;
     --nl-color-canvas-text-soft: #1a1a1a;
   }
 }
@@ -28,7 +28,7 @@
   --nl-color-mute: #6b7280;
   --nl-color-border: #d1d5db;
   --nl-color-border-soft: #e5e7eb;
-  --nl-color-canvas: #ffffff;
-  --nl-color-canvas-soft: #f9fafb;
+  --nl-color-canvas: #f5f5f5;
+  --nl-color-canvas-soft: #ffffff;
   --nl-color-canvas-text-soft: #1a1a1a;
 }

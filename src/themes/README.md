@@ -6,8 +6,8 @@ Dark is the default theme. Light mode toggle via @media (prefers-color-scheme: l
 
 | Token | Dark | Light |
 |-------|------|-------|
-| `--nl-color-canvas` | #050505 | #ffffff |
-| `--nl-color-canvas-soft` | #0a0a0a | #f9fafb |
+| `--nl-color-canvas` | #050505 | #f5f5f5 |
+| `--nl-color-canvas-soft` | #0a0a0a | #ffffff |
 | `--nl-color-canvas-text-soft` | #f5f6f7 | #1a1a1a |
 | `--nl-color-ink-strong` | #ffffff | #000000 |
 | `--nl-color-ink` | #f2f2f2 | #1a1a1a |
