@@ -13,6 +13,7 @@
   --nl-space-4xl: 2.5rem;   /* 40px */
   --nl-space-5xl: 3rem;     /* 48px */
   --nl-space-6xl: 4rem;     /* 64px */
+  --nl-touch-min: 3rem;    /* 48px — Apple + Android + WCAG */
 
   /* Radius (REM — 16px base) */
   --nl-radius-none: 0;      /* 0px */

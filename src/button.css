@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: var(--nl-space-md) var(--nl-space-2xl);
+  padding: var(--nl-space-lg) var(--nl-space-2xl);
   font-family: var(--nl-font-sans);
   font-weight: 600;
   cursor: pointer;
