@@ -1,0 +1,34 @@
+/* Light theme — system preference + manual override */
+@media (prefers-color-scheme: light) {
+  :root {
+    --nl-color-primary: #009999;
+    --nl-color-primary-soft: #007a7a;
+    --nl-color-primary-deep: #00b8b8;
+    --nl-color-on-primary: #ffffff;
+    --nl-color-ink: #1a1a1a;
+    --nl-color-ink-strong: #000000;
+    --nl-color-body: #4a4a4a;
+    --nl-color-mute: #6b7280;
+    --nl-color-border: #d1d5db;
+    --nl-color-border-soft: #e5e7eb;
+    --nl-color-canvas: #ffffff;
+    --nl-color-canvas-soft: #f9fafb;
+    --nl-color-canvas-text-soft: #1a1a1a;
+  }
+}
+
+[data-theme="light"] {
+  --nl-color-primary: #009999;
+  --nl-color-primary-soft: #007a7a;
+  --nl-color-primary-deep: #00b8b8;
+  --nl-color-on-primary: #ffffff;
+  --nl-color-ink: #1a1a1a;
+  --nl-color-ink-strong: #000000;
+  --nl-color-body: #4a4a4a;
+  --nl-color-mute: #6b7280;
+  --nl-color-border: #d1d5db;
+  --nl-color-border-soft: #e5e7eb;
+  --nl-color-canvas: #ffffff;
+  --nl-color-canvas-soft: #f9fafb;
+  --nl-color-canvas-text-soft: #1a1a1a;
+}
