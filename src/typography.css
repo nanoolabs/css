@@ -1,0 +1,86 @@
+/* Headings */
+.nl-h1 {
+  /* alias: --nl-display-xl-* tokens */
+  font-size: var(--nl-display-xl-size);
+  font-weight: var(--nl-display-xl-weight);
+  line-height: var(--nl-display-xl-lh);
+  letter-spacing: var(--nl-display-xl-ls);
+  font-family: var(--nl-font-sans);
+}
+
+.nl-h2 {
+  /* alias: --nl-display-lg-* tokens */
+  font-size: var(--nl-display-lg-size);
+  font-weight: var(--nl-display-lg-weight);
+  line-height: var(--nl-display-lg-lh);
+  letter-spacing: var(--nl-display-lg-ls);
+  font-family: var(--nl-font-sans);
+}
+
+.nl-h3 {
+  font-size: var(--nl-h3-size);
+  font-weight: var(--nl-h3-weight);
+  line-height: var(--nl-h3-lh);
+}
+
+.nl-h4 {
+  font-size: var(--nl-h4-size);
+  font-weight: var(--nl-h4-weight);
+  line-height: var(--nl-h4-lh);
+}
+
+.nl-h5 {
+  font-size: var(--nl-h5-size);
+  font-weight: var(--nl-h5-weight);
+  line-height: var(--nl-h5-lh);
+}
+
+.nl-h6 {
+  font-size: var(--nl-h6-size);
+  font-weight: var(--nl-h6-weight);
+  line-height: var(--nl-h6-lh);
+}
+
+/* Display */
+.nl-display-lg {
+  font-size: var(--nl-display-lg-size);
+  font-weight: var(--nl-display-lg-weight);
+  line-height: var(--nl-display-lg-lh);
+  letter-spacing: var(--nl-display-lg-ls);
+  font-family: var(--nl-font-sans);
+}
+
+/* Text Utilities */
+.nl-display-xl {
+  font-size: var(--nl-display-xl-size);
+  font-weight: var(--nl-display-xl-weight);
+  line-height: var(--nl-display-xl-lh);
+  letter-spacing: var(--nl-display-xl-ls);
+  font-family: var(--nl-font-sans);
+}
+
+.nl-text-cyan {
+  color: var(--nl-color-primary);
+}
+
+.nl-text-mute {
+  color: var(--nl-color-mute);
+}
+
+.nl-text-code {
+  font-family: var(--nl-font-mono);
+  font-size: var(--nl-code-sm-size);
+  color: var(--nl-color-primary-soft);
+}
+
+/* Links */
+.nl-link {
+  color: inherit;
+  text-decoration-color: var(--nl-color-border);
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+.nl-link:hover {
+  text-decoration-color: var(--nl-color-primary);
+}

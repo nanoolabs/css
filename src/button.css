@@ -1,0 +1,33 @@
+.nl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--nl-space-md) var(--nl-space-2xl);
+  font-family: var(--nl-font-sans);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-radius: var(--nl-radius-md);
+  border: none;
+  text-decoration: none;
+}
+
+.nl-btn-primary {
+  background-color: var(--nl-color-primary);
+  color: var(--nl-color-on-primary);
+}
+
+.nl-btn-primary:hover {
+  background-color: var(--nl-color-primary-soft);
+}
+
+.nl-btn-ghost {
+  background-color: transparent;
+  border: var(--nl-hairline);
+  color: var(--nl-color-mute);
+}
+
+.nl-btn-ghost:hover {
+  color: var(--nl-color-primary);
+  border-color: var(--nl-color-primary);
+}
