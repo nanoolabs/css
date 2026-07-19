@@ -3,6 +3,8 @@
    REM-based, dark-first, zero runtime JS */
 @import "./reset.css";
 @import "./variables.css";
+@import "./themes/dark.css";
+@import "./themes/light.css";
 @import "./layout.css";
 @import "./typography.css";
 @import "./button.css";
