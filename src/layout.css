@@ -13,3 +13,46 @@
 .nl-container-lg {
   max-width: 64rem; /* 1024px */
 }
+
+/* Stack — vertical flow */
+.nl-stack {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Row — horizontal flow */
+.nl-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nl-row-center {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Grid presets */
+.nl-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.nl-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nl-grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+/* Gap utilities — using token scale */
+.nl-gap-xs  { gap: var(--nl-space-xs); }   /* 4px */
+.nl-gap-sm  { gap: var(--nl-space-sm); }   /* 8px */
+.nl-gap-md  { gap: var(--nl-space-md); }   /* 12px */
+.nl-gap-lg  { gap: var(--nl-space-lg); }   /* 16px */
+.nl-gap-xl  { gap: var(--nl-space-xl); }   /* 20px */
+.nl-gap-2xl { gap: var(--nl-space-2xl); }  /* 24px */
