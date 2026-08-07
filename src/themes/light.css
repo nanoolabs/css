@@ -1,6 +1,6 @@
 /* Light theme — system preference + manual override */
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not([data-theme="dark"]) {
     --nl-color-primary: #009999;
     --nl-color-primary-soft: #007a7a;
     --nl-color-primary-deep: #00b8b8;
