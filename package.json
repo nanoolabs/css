@@ -19,8 +19,10 @@
     "url": "git+https://github.com/nanoolabs/css.git"
   },
   "scripts": {
-    "build": "lightningcss --minify --bundle --targets 'last 2 versions' src/main.css -o dist/nanoo.min.css",
-    "dev": "chokidar 'src/**/*.css' -c 'lightningcss --bundle src/main.css -o dist/nanoo.css'"
+    "build": "lightningcss --minify --bundle --targets 'last 2 versions' src/tokens.css -o dist/tokens.min.css && lightningcss --minify --bundle --targets 'last 2 versions' src/main.css -o dist/nanoo.min.css",
+    "dev": "chokidar 'src/**/*.css' -c 'lightningcss --bundle src/tokens.css -o dist/tokens.css && lightningcss --bundle src/main.css -o dist/nanoo.css'",
+    "format:check": "prettier --check 'src/**/*.css' '*.md'",
+    "format": "prettier --write 'src/**/*.css' '*.md'"
   },
   "keywords": [
     "nanoo",
@@ -33,6 +35,7 @@
   "license": "ISC",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
-    "lightningcss-cli": "^1.32.0"
+    "lightningcss-cli": "^1.33.0",
+    "prettier": "^3.9.6"
   }
 }
