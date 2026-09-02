@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - 'package.json'
+      - "package.json"
 
 jobs:
   release:
@@ -28,14 +28,14 @@ jobs:
           git push origin ${{ steps.get_version.outputs.VERSION }}
 
       - name: Generate Central Changelog
-        uses: nanoolabs/actions/release-action@release-action-v1
+        uses: nanoolabs/actions/release-action@v2
         id: release_tool
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.get_version.outputs.VERSION }}
-          name: Release ${{ steps.get_version.outputs.VERSION }}
+          name: ${{ steps.get_version.outputs.VERSION }}
           body: ${{ steps.release_tool.outputs.changelog }}
           target_commitish: main
         env:
