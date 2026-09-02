@@ -1,23 +1,30 @@
-/* Nanoo Reset - Minimal & Performance First*/
+/* ================================================================
+   RESET: Minimal browser normalization
+
+   Browsers have inconsistent default styles, this reset create
+   a predictable baseline without stripping useful default.
+   ================================================================ */
+
+/* Box sizing: border-box = padding + border included in width */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-* {
   margin: 0;
   padding: 0;
 }
 
-body {
+/* Base: antialiased text, dark bg, system font stack */
+html {
+  background: var(--color-bg, #0a0a0a);
+  color: var(--color-text, #e5e5e5);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 16px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: var(--nl-canvas, #050505);
-  color: var(--nl-fg, #ffffff);
-  font-family: var(--nl-font-sans, system-ui, sans-serif);
 }
 
+/* Images: block display prevent weird inline gap */
 img,
 picture,
 video,
@@ -27,6 +34,7 @@ svg {
   max-width: 100%;
 }
 
+/* Forms: inherit font from parent instead of browser default */
 input,
 button,
 textarea,
@@ -34,7 +42,7 @@ select {
   font: inherit;
 }
 
-p,
+/* Headings: prevent overflow from long word */
 h1,
 h2,
 h3,
