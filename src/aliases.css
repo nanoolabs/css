@@ -1,0 +1,61 @@
+/* ================================================================
+   ALIASES: Backward compatibility with old token names
+
+   Maps legacy --nl-* tokens to new token names.
+   Deprecated: will be remove in v2.0.0
+   ================================================================ */
+:root {
+  /* Color aliases */
+  --nl-color-primary: var(--color-brand);
+  --nl-color-primary-soft: var(--color-brand-muted);
+  --nl-color-primary-deep: var(--color-brand-subtle);
+  --nl-color-on-primary: var(--color-brand-on);
+  --nl-color-ink: var(--color-text);
+  --nl-color-ink-strong: var(--color-text-strong);
+  --nl-color-body: var(--color-text-muted);
+  --nl-color-mute: var(--color-text-muted);
+  --nl-color-border: var(--color-border);
+  --nl-color-border-soft: var(--color-border-subtle);
+  --nl-color-canvas: var(--color-bg);
+  --nl-color-canvas-soft: var(--color-bg-surface);
+  --nl-color-canvas-text-soft: var(--color-text);
+
+  /* Spacing aliases */
+  --nl-space-xxs: var(--spacing-xs);
+  --nl-space-xs: var(--spacing-xs);
+  --nl-space-sm: var(--spacing-sm);
+  --nl-space-md: var(--spacing-md);
+  --nl-space-lg: var(--spacing-lg);
+  --nl-space-xl: var(--spacing-xl);
+  --nl-space-2xl: var(--spacing-2xl);
+  --nl-space-3xl: var(--spacing-2xl);
+  --nl-space-4xl: var(--spacing-2xl);
+  --nl-space-5xl: var(--spacing-2xl);
+  --nl-space-6xl: var(--spacing-2xl);
+
+  /* Radius aliases */
+  --nl-radius-none: 0;
+  --nl-radius-xs: var(--radius-sm);
+  --nl-radius-sm: var(--radius-sm);
+  --nl-radius-md: var(--radius-md);
+  --nl-radius-lg: var(--radius-lg);
+  --nl-radius-pill: var(--radius-pill);
+
+  /* Typography aliases */
+  --nl-font-sans: var(--font-sans);
+  --nl-font-mono: var(--font-mono);
+
+  /* Structural aliases */
+  --nl-canvas: var(--color-bg);
+  --nl-fg: var(--color-text);
+  --nl-primary: var(--color-brand);
+  --nl-hairline: 1px solid var(--color-border);
+
+  /* Accent aliases */
+  --nl-accent-orange: var(--color-accent-orange);
+  --nl-accent-green: var(--color-accent-green);
+  --nl-accent-blue: var(--color-accent-blue);
+  --nl-accent-yellow: var(--color-accent-yellow);
+  --nl-accent-red: var(--color-accent-red);
+  --nl-accent-violet: var(--color-accent-violet);
+}

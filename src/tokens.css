@@ -1,0 +1,14 @@
+/* ================================================================
+   TOKENS: Variables + Themes only
+
+   Import this for tailwind v4 or when u only need CSS custom
+   properties without reset/typography/components
+
+   Usage:
+     @import '@nlbs/css';           → full package (reset + tokens + components)
+     @import '@nlbs/css/tokens';    → tokens only (variables + themes)
+   ================================================================ */
+@import './variables.css';
+@import './themes/dark.css';
+@import './themes/light.css';
+@import './aliases.css';
