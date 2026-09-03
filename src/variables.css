@@ -1,76 +1,105 @@
-/* Nanoo Variables
-   REM throughout: accessible, scales with user font-size preference */
-:root {
-  /* Spacing (REM — 16px base) */
-  --nl-space-xxs: 0.125rem;  /* 2px */
-  --nl-space-xs: 0.25rem;   /* 4px */
-  --nl-space-sm: 0.5rem;    /* 8px */
-  --nl-space-md: 0.75rem;   /* 12px */
-  --nl-space-lg: 1rem;      /* 16px */
-  --nl-space-xl: 1.25rem;   /* 20px */
-  --nl-space-2xl: 1.5rem;   /* 24px */
-  --nl-space-3xl: 2rem;     /* 32px */
-  --nl-space-4xl: 2.5rem;   /* 40px */
-  --nl-space-5xl: 3rem;     /* 48px */
-  --nl-space-6xl: 4rem;     /* 64px */
-  --nl-touch-min: 3rem;    /* 48px — Apple + Android + WCAG */
+/* ================================================================
+   PRIMITIVES: Raw values, zero specificity
 
-  /* Radius (REM — 16px base) */
-  --nl-radius-none: 0;      /* 0px */
-  --nl-radius-xs: 0.25rem;  /* 4px */
-  --nl-radius-sm: 0.375rem; /* 6px */
-  --nl-radius-md: 0.5rem;   /* 8px */
-  --nl-radius-pill: 9999px;
+   These are the building block. They don't style anything directly.
+   Use them in your own CSS rules or reference them in semantic tokens.
 
-  /* Typography Families */
-  --nl-font-sans: "Geist Sans", system-ui, sans-serif;
-  --nl-font-mono: "Geist Mono", monospace;
+   :where() = zero specificity, so your override win without !important
+   ================================================================ */
+:where(:root) {
+  /* ---------------------------------------------------------------
+     GRAY SCALE: Pure Neutral
 
-  /* Typography Sizes (REM) */
-  --nl-display-xl-size: clamp(2.5rem, 8vw, 4.5rem);
-  --nl-display-xl-weight: 800;
-  --nl-display-xl-lh: 0.9;
-  --nl-display-xl-ls: -0.04em;
+     OKLCH = Oklab Lightness Chroma hue (modern color space)
+     "chroma 0" = zero saturation, pure gray, no color tint
 
-  /* Typography - Display LG */
-  --nl-display-lg-size: clamp(1.5rem, 5vw, 2.5rem);
-  --nl-display-lg-weight: 700;
-  --nl-display-lg-lh: 1.1;
-  --nl-display-lg-ls: -0.02em;
+     Lightness steps: 0 = near white, 12 = near  black
+     Step 6 = approx 50% gray (middle point)
+     --------------------------------------------------------------- */
+  --gray-0: oklch(0.99 0 0); /* near white, lightesst */
+  --gray-1: oklch(0.97 0 0); /* very light gray */
+  --gray-2: oklch(0.93 0 0); /* light gray, primary text on dark */
+  --gray-3: oklch(0.88 0 0); /* light gray, brand on dark */
+  --gray-4: oklch(0.82 0 0); /* medium light, borders on light */
+  --gray-5: oklch(0.74 0 0); /* medium gray, muted text */
+  --gray-6: oklch(0.64 0 0); /* mid gray, subtle elements */
+  --gray-7: oklch(0.53 0 0); /* medium dark, strong borders */
+  --gray-8: oklch(0.44 0 0); /* dark gray, strong borders on light */
+  --gray-9: oklch(0.35 0 0); /* dark, default borders on dark */
+  --gray-10: oklch(0.26 0 0); /* dark, mute bg, text on light */
+  --gray-11: oklch(0.18 0 0); /* very dark, surface on dark */
+  --gray-12: oklch(0.1 0 0); /* near black, bg on dark */
 
-  /* Typography - Body MD */
-  --nl-body-md-size: 1rem;      /* 16px */
-  --nl-body-md-weight: 400;
-  --nl-body-md-lh: 1.625;     /* 26px / 16px */
+  /* ---------------------------------------------------------------
+     SPACING: REM units
 
-  /* Typography - Code SM */
-  --nl-code-sm-size: 0.8125rem; /* 13px */
-  --nl-code-sm-weight: 400;
-  --nl-code-sm-lh: 1.4;   /* ~18px on 13px font */
+     REM = Root EM, relative to root font size (default 16px)
+     0.25rem = 4px, 0.5rem = 8px, 1rem = 16px, etc.
 
-  /* Typography - H3 */
-  --nl-h3-size: clamp(1.25rem, 3vw, 1.5rem); /* 20-24px */
-  --nl-h3-weight: 600;
-  --nl-h3-lh: 1.3;
+     Use these for padding, margin, gaps.
+     --------------------------------------------------------------- */
+  --spacing-xs: 0.25rem; /* 4px */
+  --spacing-sm: 0.5rem; /* 8px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 3rem; /* 48px */
 
-  /* Typography - H4 */
-  --nl-h4-size: 1.125rem;  /* 18px */
-  --nl-h4-weight: 600;
-  --nl-h4-lh: 1.4;
+  /* ---------------------------------------------------------------
+     BORDER RADIUS: REM units
 
-  /* Typography - H5 */
-  --nl-h5-size: 1rem;      /* 16px */
-  --nl-h5-weight: 600;
-  --nl-h5-lh: 1.5;
+     Control corner round. "pill" = fully rounded (badges, buttons).
+     --------------------------------------------------------------- */
+  --radius-sm: 0.25rem; /* 4px, small elements */
+  --radius-md: 0.5rem; /* 8px, cards, buttons */
+  --radius-lg: 0.75rem; /* 12px, larger surfaces */
+  --radius-pill: 9999px; /* fully rounded, pills, badges */
 
-  /* Typography - H6 */
-  --nl-h6-size: 0.875rem;  /* 14px */
-  --nl-h6-weight: 600;
-  --nl-h6-lh: 1.5;
+  /* ---------------------------------------------------------------
+     TYPOGRAPHY: Font Families
 
-  /* Structural Aliases */
-  --nl-canvas: var(--nl-color-canvas);
-  --nl-fg: var(--nl-color-ink);
-  --nl-primary: var(--nl-color-primary);
-  --nl-hairline: 1px solid var(--nl-color-border);
+     "Inter" = clean sans-serif (popular for UI)
+     Fallback ensure text renders even if custom font fails to load
+     --------------------------------------------------------------- */
+  --font-sans:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+    sans-serif;
+  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+
+  /* ---------------------------------------------------------------
+     TYPOGRAPHY: Font Size
+
+     REM for accessibility: scales with user browser font preference
+     clamp() = responsive: min, prefer (viewport-based), max
+     --------------------------------------------------------------- */
+  --text-xs: 0.75rem; /* 12px, labels, captions */
+  --text-sm: 0.875rem; /* 14px, small text */
+  --text-md: 1rem; /* 16px, body text */
+  --text-lg: 1.125rem; /* 18px, large body */
+  --text-xl: 1.25rem; /* 20px, h6, small headings */
+  --text-2xl: 1.5rem; /* 24px, h5, h4 */
+  --text-3xl: clamp(1.75rem, 4vw, 2.5rem); /* 28-40px, h3 */
+  --text-4xl: clamp(2.25rem, 5vw, 3.5rem); /* 36-56px, h1 */
+
+  /* ---------------------------------------------------------------
+     ANIMATION: Duration
+
+     fast = subtle feedback (hover, focus)
+     Normal = page transitions, theme switching
+     --------------------------------------------------------------- */
+  --duration-fast: 100ms;
+  --duration-normal: 200ms;
+
+  /* ---------------------------------------------------------------
+     ACCENT COLORS: Multi-color system
+
+     Used sparingly for status, interactive elements, and emphasis.
+     each accent has its own scale for backgrounds and text.
+     --------------------------------------------------------------- */
+  --accent-orange: oklch(0.75 0.18 50); /* primary accent */
+  --accent-green: oklch(0.85 0.22 155); /* success, positive */
+  --accent-blue: oklch(0.72 0.15 250); /* info, links */
+  --accent-yellow: oklch(0.88 0.16 85); /* warnings */
+  --accent-red: oklch(0.7 0.2 25); /* danger, errors */
+  --accent-violet: oklch(0.72 0.18 290); /* special, brand */
 }

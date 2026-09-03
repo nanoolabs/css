@@ -1,34 +1,128 @@
-/* Light theme — system preference + manual override */
+/* ================================================================
+   LIGHT THEME: System preference + manual override
+
+   Two mechanisms:
+   1. @media (prefers-color-scheme) = auto-detect OS setting
+   2. [data-theme="light"] = manual override via JS
+   ================================================================ */
+
+/* ---------------------------------------------------------------
+   AUTO: System preference (respects OS dark/light setting)
+   :root:not([data-theme="dark"]) = only when no manual override
+   --------------------------------------------------------------- */
 @media (prefers-color-scheme: light) {
-  :root:not([data-theme="dark"]) {
-    --nl-color-primary: #009999;
-    --nl-color-primary-soft: #007a7a;
-    --nl-color-primary-deep: #00b8b8;
-    --nl-color-on-primary: #ffffff;
-    --nl-color-ink: #1a1a1a;
-    --nl-color-ink-strong: #000000;
-    --nl-color-body: #4a4a4a;
-    --nl-color-mute: #6b7280;
-    --nl-color-border: #d1d5db;
-    --nl-color-border-soft: #e5e7eb;
-    --nl-color-canvas: #f5f5f5;
-    --nl-color-canvas-soft: #ffffff;
-    --nl-color-canvas-text-soft: #1a1a1a;
+  :root:not([data-theme='dark']) {
+    color-scheme: light;
+
+    /* Brand */
+    --color-brand: var(--gray-12); /* near black on light */
+    --color-brand-muted: var(--gray-9); /* dark gray */
+    --color-brand-subtle: var(--gray-6); /* mid gray */
+    --color-brand-on: var(--gray-0); /* white */
+
+    /* Text */
+    --color-text: var(--gray-10); /* dark gray, body text */
+    --color-text-strong: var(--gray-12); /* near black, headings */
+    --color-text-muted: var(--gray-6); /* mid gray, captions */
+    --color-text-on-muted: var(--gray-12);
+    --color-text-on-brand: var(--gray-0);
+
+    /* Background: Light = bg is lightest, surfaces slightly darker */
+    --color-bg: var(--gray-0); /* near white */
+    --color-bg-surface: var(--gray-1); /* very light gray */
+    --color-bg-muted: var(--gray-2); /* light gray */
+
+    /* Border */
+    --color-border: var(--gray-4); /* medium light */
+    --color-border-strong: var(--gray-8); /* dark gray */
+    --color-border-subtle: var(--gray-2); /* light gray */
+
+    /* State: oklch(0 0 0 / 0.04) = 4% black = subtle hover on light */
+    --color-hover: oklch(0 0 0 / 0.04);
+    --color-active: oklch(0 0 0 / 0.08);
+    --color-overlay: oklch(0 0 0 / 0.5); /* lighter backdrop */
+    --color-focus-ring: oklch(0.55 0.05 250 / 0.4);
+
+    /* Status */
+    --color-danger: oklch(0.55 0.22 25); /* darker red for contrast */
+    --color-danger-hover: oklch(0.48 0.24 25);
+    --color-danger-subtle: oklch(0.55 0.22 25 / 0.08); /* 8% opacity */
+    --color-info: oklch(0.55 0.18 250); /* darker blue */
+    --color-info-subtle: oklch(0.55 0.18 250 / 0.08);
+    --color-success: oklch(0.6 0.2 155); /* darker green */
+    --color-success-subtle: oklch(0.6 0.2 155 / 0.08);
+
+    /* Accent */
+    --color-accent-orange: var(--accent-orange);
+    --color-accent-orange-subtle: oklch(0.75 0.18 50 / 0.08);
+    --color-accent-green: var(--accent-green);
+    --color-accent-green-subtle: oklch(0.85 0.22 155 / 0.08);
+    --color-accent-blue: var(--accent-blue);
+    --color-accent-blue-subtle: oklch(0.72 0.15 250 / 0.08);
+    --color-accent-yellow: var(--accent-yellow);
+    --color-accent-yellow-subtle: oklch(0.88 0.16 85 / 0.08);
+    --color-accent-red: var(--accent-red);
+    --color-accent-red-subtle: oklch(0.7 0.2 25 / 0.08);
+    --color-accent-violet: var(--accent-violet);
+    --color-accent-violet-subtle: oklch(0.72 0.18 290 / 0.08);
   }
 }
 
-[data-theme="light"] {
-  --nl-color-primary: #009999;
-  --nl-color-primary-soft: #007a7a;
-  --nl-color-primary-deep: #00b8b8;
-  --nl-color-on-primary: #ffffff;
-  --nl-color-ink: #1a1a1a;
-  --nl-color-ink-strong: #000000;
-  --nl-color-body: #4a4a4a;
-  --nl-color-mute: #6b7280;
-  --nl-color-border: #d1d5db;
-  --nl-color-border-soft: #e5e7eb;
-  --nl-color-canvas: #f5f5f5;
-  --nl-color-canvas-soft: #ffffff;
-  --nl-color-canvas-text-soft: #1a1a1a;
+/* ---------------------------------------------------------------
+   MANUAL: data-theme="light" attribute on <html>
+   --------------------------------------------------------------- */
+[data-theme='light'] {
+  color-scheme: light;
+
+  /* Brand */
+  --color-brand: var(--gray-12);
+  --color-brand-muted: var(--gray-9);
+  --color-brand-subtle: var(--gray-6);
+  --color-brand-on: var(--gray-0);
+
+  /* Text */
+  --color-text: var(--gray-10);
+  --color-text-strong: var(--gray-12);
+  --color-text-muted: var(--gray-6);
+  --color-text-on-muted: var(--gray-12);
+  --color-text-on-brand: var(--gray-0);
+
+  /* Background */
+  --color-bg: var(--gray-0);
+  --color-bg-surface: var(--gray-1);
+  --color-bg-muted: var(--gray-2);
+
+  /* Border */
+  --color-border: var(--gray-4);
+  --color-border-strong: var(--gray-8);
+  --color-border-subtle: var(--gray-2);
+
+  /* State */
+  --color-hover: oklch(0 0 0 / 0.04);
+  --color-active: oklch(0 0 0 / 0.08);
+  --color-overlay: oklch(0 0 0 / 0.5);
+  --color-focus-ring: oklch(0.55 0.05 250 / 0.4);
+
+  /* Status */
+  --color-danger: oklch(0.55 0.22 25);
+  --color-danger-hover: oklch(0.48 0.24 25);
+  --color-danger-subtle: oklch(0.55 0.22 25 / 0.08);
+  --color-info: oklch(0.55 0.18 250);
+  --color-info-subtle: oklch(0.55 0.18 250 / 0.08);
+  --color-success: oklch(0.6 0.2 155);
+  --color-success-subtle: oklch(0.6 0.2 155 / 0.08);
+
+  /* Accent */
+  --color-accent-orange: var(--accent-orange);
+  --color-accent-orange-subtle: oklch(0.75 0.18 50 / 0.08);
+  --color-accent-green: var(--accent-green);
+  --color-accent-green-subtle: oklch(0.85 0.22 155 / 0.08);
+  --color-accent-blue: var(--accent-blue);
+  --color-accent-blue-subtle: oklch(0.72 0.15 250 / 0.08);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-yellow-subtle: oklch(0.88 0.16 85 / 0.08);
+  --color-accent-red: var(--accent-red);
+  --color-accent-red-subtle: oklch(0.7 0.2 25 / 0.08);
+  --color-accent-violet: var(--accent-violet);
+  --color-accent-violet-subtle: oklch(0.72 0.18 290 / 0.08);
 }
