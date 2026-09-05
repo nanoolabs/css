@@ -1,11 +1,15 @@
-/* @nlbs/css — Nanoo Labs design system
-   nl- prefix = Nanoo Labs (e.g. .nl-btn, .nl-card, --nl-space-md)
-   REM-based, dark-first, zero runtime JS */
-@import "./reset.css";
-@import "./variables.css";
-@import "./themes/dark.css";
-@import "./themes/light.css";
-@import "./layout.css";
-@import "./typography.css";
-@import "./button.css";
-@import "./card.css";
+/* ================================================================
+   MAIN: Full package entry point
+
+   Imports everything: reset, tokens, themes, typography, components.
+   For tokens only (tailwind v4), use tokens.css .
+   ================================================================ */
+@import './reset.css';
+@import './variables.css';
+@import './themes/dark.css';
+@import './themes/light.css';
+@import './aliases.css';
+@import './typography.css';
+@import './layout.css';
+@import './button.css';
+@import './card.css';
