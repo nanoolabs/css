@@ -31,7 +31,7 @@
     "minimalist",
     "performance"
   ],
-  "author": "Nanoo Labs",
+  "author": "Adnan Slamet Wibowo <adnan@nanoolabs.dev>",
   "license": "ISC",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
