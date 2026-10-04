@@ -1,4 +1,4 @@
-# @nlbs/css — Roadmap
+# @nlbs/css Roadmap
 
 ## v0.3.0
 
@@ -9,6 +9,10 @@
 - [x] Light theme (hybrid `@media` + `[data-theme]`)
 - [x] Touch target minimum (`--nl-touch-min: 3rem`)
 - [x] `--nl-hairline` structural alias
+
+## v1.1.0
+
+- [x] Shadow tokens (`--shadow-sm`, `--shadow-md`, `--shadow-lg`)
 
 ## Next
 
