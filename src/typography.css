@@ -17,39 +17,39 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--color-text-strong, var(--gray-0));
-  line-height: 1.1;
-  font-weight: 600;
+	color: var(--color-text-strong, var(--gray-0));
+	line-height: 1.1;
+	font-weight: 600;
 }
 
 h1 {
-  font-size: var(--text-4xl);
-  letter-spacing: -0.03em;
+	font-size: var(--text-4xl);
+	letter-spacing: -0.03em;
 }
 
 h2 {
-  font-size: var(--text-3xl);
-  letter-spacing: -0.02em;
+	font-size: var(--text-3xl);
+	letter-spacing: -0.02em;
 }
 
 h3 {
-  font-size: var(--text-2xl);
+	font-size: var(--text-2xl);
 }
 
 h4 {
-  font-size: var(--text-xl);
+	font-size: var(--text-xl);
 }
 
 h5 {
-  font-size: var(--text-md);
+	font-size: var(--text-md);
 }
 
 h6 {
-  font-size: var(--text-xs);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-text-muted, var(--gray-5));
-  font-weight: 500;
+	font-size: var(--text-xs);
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: var(--color-text-muted, var(--gray-5));
+	font-weight: 500;
 }
 
 /* ---------------------------------------------------------------
@@ -58,18 +58,18 @@ h6 {
    max-width: 65ch = optimal reading line length (approx 65 characters)
    --------------------------------------------------------------- */
 p {
-  color: var(--color-text, var(--gray-2));
-  max-width: 65ch;
+	color: var(--color-text, var(--gray-2));
+	max-width: 65ch;
 }
 
 a {
-  color: var(--color-info, oklch(65% 0.15 250deg));
-  text-decoration: none;
+	color: var(--color-info, oklch(65% 0.15 250deg));
+	text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-info-hover, var(--color-info, oklch(65% 0.15 250deg)));
-  text-decoration: underline;
+	color: var(--color-info-hover, var(--color-info, oklch(65% 0.15 250deg)));
+	text-decoration: underline;
 }
 
 /* ---------------------------------------------------------------
@@ -78,10 +78,10 @@ a:hover {
    Inline code styling. Use mono font and mute background.
    --------------------------------------------------------------- */
 code {
-  font-family: var(--font-mono, monospace);
-  font-size: 0.875em;
-  padding: 0.125em 0.375em;
-  background: var(--color-bg-muted, var(--gray-10));
-  border-radius: var(--radius-sm, 0.25rem);
-  color: var(--color-text, var(--gray-2));
+	font-family: var(--font-mono, monospace);
+	font-size: 0.875em;
+	padding: 0.125em 0.375em;
+	background: var(--color-bg-muted, var(--gray-10));
+	border-radius: var(--radius-sm, 0.25rem);
+	color: var(--color-text, var(--gray-2));
 }

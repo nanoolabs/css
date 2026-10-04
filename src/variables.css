@@ -7,7 +7,7 @@
    :where() = zero specificity, so your override win without !important
    ================================================================ */
 :where(:root) {
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      GRAY SCALE: Pure Neutral
 
      OKLCH = Oklab Lightness Chroma hue (modern color space)
@@ -16,21 +16,21 @@
      Lightness steps: 0 = near white, 12 = near  black
      Step 6 = approx 50% gray (middle point)
      --------------------------------------------------------------- */
-  --gray-0: oklch(99% 0 0deg); /* near white, lightesst */
-  --gray-1: oklch(97% 0 0deg); /* very light gray */
-  --gray-2: oklch(93% 0 0deg); /* light gray, primary text on dark */
-  --gray-3: oklch(88% 0 0deg); /* light gray, brand on dark */
-  --gray-4: oklch(82% 0 0deg); /* medium light, borders on light */
-  --gray-5: oklch(74% 0 0deg); /* medium gray, muted text */
-  --gray-6: oklch(64% 0 0deg); /* mid gray, subtle elements */
-  --gray-7: oklch(53% 0 0deg); /* medium dark, strong borders */
-  --gray-8: oklch(44% 0 0deg); /* dark gray, strong borders on light */
-  --gray-9: oklch(35% 0 0deg); /* dark, default borders on dark */
-  --gray-10: oklch(26% 0 0deg); /* dark, mute bg, text on light */
-  --gray-11: oklch(18% 0 0deg); /* very dark, surface on dark */
-  --gray-12: oklch(10% 0 0deg); /* near black, bg on dark */
+	--gray-0: oklch(99% 0 0deg); /* near white, lightesst */
+	--gray-1: oklch(97% 0 0deg); /* very light gray */
+	--gray-2: oklch(93% 0 0deg); /* light gray, primary text on dark */
+	--gray-3: oklch(88% 0 0deg); /* light gray, brand on dark */
+	--gray-4: oklch(82% 0 0deg); /* medium light, borders on light */
+	--gray-5: oklch(74% 0 0deg); /* medium gray, muted text */
+	--gray-6: oklch(64% 0 0deg); /* mid gray, subtle elements */
+	--gray-7: oklch(53% 0 0deg); /* medium dark, strong borders */
+	--gray-8: oklch(44% 0 0deg); /* dark gray, strong borders on light */
+	--gray-9: oklch(35% 0 0deg); /* dark, default borders on dark */
+	--gray-10: oklch(26% 0 0deg); /* dark, mute bg, text on light */
+	--gray-11: oklch(18% 0 0deg); /* very dark, surface on dark */
+	--gray-12: oklch(10% 0 0deg); /* near black, bg on dark */
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      SPACING: REM units
 
      REM = Root EM, relative to root font size (default 16px)
@@ -38,75 +38,73 @@
 
      Use these for padding, margin, gaps.
      --------------------------------------------------------------- */
-  --spacing-xs: 0.25rem; /* 4px */
-  --spacing-sm: 0.5rem; /* 8px */
-  --spacing-md: 1rem; /* 16px */
-  --spacing-lg: 1.5rem; /* 24px */
-  --spacing-xl: 2rem; /* 32px */
-  --spacing-2xl: 3rem; /* 48px */
+	--spacing-xs: 0.25rem; /* 4px */
+	--spacing-sm: 0.5rem; /* 8px */
+	--spacing-md: 1rem; /* 16px */
+	--spacing-lg: 1.5rem; /* 24px */
+	--spacing-xl: 2rem; /* 32px */
+	--spacing-2xl: 3rem; /* 48px */
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      BORDER RADIUS: REM units
 
      Control corner round. "pill" = fully rounded (badges, buttons).
      --------------------------------------------------------------- */
-  --radius-sm: 0.25rem; /* 4px, small elements */
-  --radius-md: 0.5rem; /* 8px, cards, buttons */
-  --radius-lg: 0.75rem; /* 12px, larger surfaces */
-  --radius-pill: 9999px; /* fully rounded, pills, badges */
+	--radius-sm: 0.25rem; /* 4px, small elements */
+	--radius-md: 0.5rem; /* 8px, cards, buttons */
+	--radius-lg: 0.75rem; /* 12px, larger surfaces */
+	--radius-pill: 9999px; /* fully rounded, pills, badges */
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      TYPOGRAPHY: Font Families
 
      "Inter" = clean sans-serif (popular for UI)
      Fallback ensure text renders even if custom font fails to load
      --------------------------------------------------------------- */
-  --font-sans:
-    'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', system-ui,
-    sans-serif;
-  --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+	--font-sans: 'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', system-ui, sans-serif;
+	--font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      TYPOGRAPHY: Font Size
 
      REM for accessibility: scales with user browser font preference
      clamp() = responsive: min, prefer (viewport-based), max
      --------------------------------------------------------------- */
-  --text-xs: 0.75rem; /* 12px, labels, captions */
-  --text-sm: 0.875rem; /* 14px, small text */
-  --text-md: 1rem; /* 16px, body text */
-  --text-lg: 1.125rem; /* 18px, large body */
-  --text-xl: 1.25rem; /* 20px, h6, small headings */
-  --text-2xl: 1.5rem; /* 24px, h5, h4 */
-  --text-3xl: clamp(1.75rem, 4vw, 2.5rem); /* 28-40px, h3 */
-  --text-4xl: clamp(2.25rem, 5vw, 3.5rem); /* 36-56px, h1 */
+	--text-xs: 0.75rem; /* 12px, labels, captions */
+	--text-sm: 0.875rem; /* 14px, small text */
+	--text-md: 1rem; /* 16px, body text */
+	--text-lg: 1.125rem; /* 18px, large body */
+	--text-xl: 1.25rem; /* 20px, h6, small headings */
+	--text-2xl: 1.5rem; /* 24px, h5, h4 */
+	--text-3xl: clamp(1.75rem, 4vw, 2.5rem); /* 28-40px, h3 */
+	--text-4xl: clamp(2.25rem, 5vw, 3.5rem); /* 36-56px, h1 */
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      ANIMATION: Duration
 
      fast = subtle feedback (hover, focus)
      Normal = page transitions, theme switching
      --------------------------------------------------------------- */
-  --duration-fast: 100ms;
-  --duration-normal: 200ms;
+	--duration-fast: 100ms;
+	--duration-normal: 200ms;
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      SHADOW: Elevation
      --------------------------------------------------------------- */
-  --shadow-sm: 0 1px 2px oklch(0% 0 0deg / 6%); /* hairline */
-  --shadow-md: 0 4px 12px oklch(0% 0 0deg / 8%); /* cards */
-  --shadow-lg: 0 12px 32px oklch(0% 0 0deg / 12%); /* modals */
+	--shadow-sm: 0 1px 2px oklch(0% 0 0deg / 6%); /* hairline */
+	--shadow-md: 0 4px 12px oklch(0% 0 0deg / 8%); /* cards */
+	--shadow-lg: 0 12px 32px oklch(0% 0 0deg / 12%); /* modals */
 
-  /* ---------------------------------------------------------------
+	/* ---------------------------------------------------------------
      ACCENT COLORS: Multi-color system
 
      Used sparingly for status, interactive elements, and emphasis.
      each accent has its own scale for backgrounds and text.
      --------------------------------------------------------------- */
-  --accent-orange: oklch(75% 0.18 50deg); /* primary accent */
-  --accent-green: oklch(85% 0.22 155deg); /* success, positive */
-  --accent-blue: oklch(72% 0.15 250deg); /* info, links */
-  --accent-yellow: oklch(88% 0.16 85deg); /* warnings */
-  --accent-red: oklch(70% 0.2 25deg); /* danger, errors */
-  --accent-violet: oklch(72% 0.18 290deg); /* special, brand */
+	--accent-orange: oklch(75% 0.18 50deg); /* primary accent */
+	--accent-green: oklch(85% 0.22 155deg); /* success, positive */
+	--accent-blue: oklch(72% 0.15 250deg); /* info, links */
+	--accent-yellow: oklch(88% 0.16 85deg); /* warnings */
+	--accent-red: oklch(70% 0.2 25deg); /* danger, errors */
+	--accent-violet: oklch(72% 0.18 290deg); /* special, brand */
 }

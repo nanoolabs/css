@@ -1,71 +1,71 @@
 {
-  "name": "@nlbs/css",
-  "version": "1.0.0",
-  "packageManager": "pnpm@12.8.1",
-  "description": "High-performance CSS foundation for Nanoo Labs",
-  "type": "module",
-  "unpkg": "dist/nanoo.min.css",
-  "jsdelivr": "dist/nanoo.min.css",
-  "exports": {
-    ".": "./dist/tokens.min.css",
-    "./style.css": "./dist/tokens.min.css",
-    "./full": "./dist/nanoo.min.css",
-    "./full/style.css": "./dist/nanoo.min.css"
-  },
-  "files": [
-    "dist",
-    "src",
-    "README.md",
-    "LICENSE"
-  ],
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/nanoolabs/css.git"
-  },
-  "homepage": "https://github.com/nanoolabs/css#readme",
-  "bugs": {
-    "url": "https://github.com/nanoolabs/css/issues"
-  },
-  "scripts": {
-    "build": "lightningcss --minify --bundle --targets 'last 2 versions' src/tokens.css -o dist/tokens.min.css && lightningcss --minify --bundle --targets 'last 2 versions' src/main.css -o dist/nanoo.min.css",
-    "dev": "chokidar 'src/**/*.css' -c 'lightningcss --bundle src/tokens.css -o dist/tokens.css && lightningcss --bundle src/main.css -o dist/nanoo.css'",
-    "format:check": "prettier --check 'src/**/*.css' '*.md'",
-    "format": "prettier --write 'src/**/*.css' '*.md'",
-    "format:changed": "git diff --name-only --diff-filter=d HEAD -z | xargs -0 -r prettier --write --ignore-unknown",
-    "prepare": "husky",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "lint:css:fix": "stylelint \"src/**/*.css\" --fix"
-  },
-  "keywords": [
-    "nanoo",
-    "css",
-    "design-system",
-    "minimalist",
-    "performance",
-    "oklch",
-    "tailwind",
-    "tokens",
-    "variables",
-    "dark-mode",
-    "light-mode",
-    "reset"
-  ],
-  "author": "Adnan Slamet Wibowo <adnan@nanoolabs.dev>",
-  "license": "ISC",
-  "devDependencies": {
-    "chokidar-cli": "^3.0.0",
-    "husky": "^9.1.7",
-    "lightningcss-cli": "^1.33.0",
-    "lint-staged": "^17.6.0",
-    "prettier": "^3.9.6",
-    "stylelint": "^17.16.0",
-    "stylelint-config-standard": "^40.0.0"
-  },
-  "lint-staged": {
-    "*": "prettier --ignore-unknown --write",
-    "*.css": "stylelint --fix"
-  }
+	"name": "@nlbs/css",
+	"version": "1.0.0",
+	"packageManager": "pnpm@12.8.1",
+	"description": "High-performance CSS foundation for Nanoo Labs",
+	"type": "module",
+	"unpkg": "dist/nanoo.min.css",
+	"jsdelivr": "dist/nanoo.min.css",
+	"exports": {
+		".": "./dist/tokens.min.css",
+		"./style.css": "./dist/tokens.min.css",
+		"./full": "./dist/nanoo.min.css",
+		"./full/style.css": "./dist/nanoo.min.css"
+	},
+	"files": [
+		"dist",
+		"src",
+		"README.md",
+		"LICENSE"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nanoolabs/css.git"
+	},
+	"homepage": "https://github.com/nanoolabs/css#readme",
+	"bugs": {
+		"url": "https://github.com/nanoolabs/css/issues"
+	},
+	"scripts": {
+		"build": "lightningcss --minify --bundle --targets 'last 2 versions' src/tokens.css -o dist/tokens.min.css && lightningcss --minify --bundle --targets 'last 2 versions' src/main.css -o dist/nanoo.min.css",
+		"dev": "chokidar 'src/**/*.css' -c 'lightningcss --bundle src/tokens.css -o dist/tokens.css && lightningcss --bundle src/main.css -o dist/nanoo.css'",
+		"format:check": "prettier --check .",
+		"format": "prettier --write .",
+		"format:changed": "git diff --name-only --diff-filter=d HEAD -z | xargs -0 -r prettier --write --ignore-unknown",
+		"prepare": "husky",
+		"lint:css": "stylelint \"src/**/*.css\"",
+		"lint:css:fix": "stylelint \"src/**/*.css\" --fix"
+	},
+	"keywords": [
+		"nanoo",
+		"css",
+		"design-system",
+		"minimalist",
+		"performance",
+		"oklch",
+		"tailwind",
+		"tokens",
+		"variables",
+		"dark-mode",
+		"light-mode",
+		"reset"
+	],
+	"author": "Adnan Slamet Wibowo <adnan@nanoolabs.dev>",
+	"license": "ISC",
+	"devDependencies": {
+		"chokidar-cli": "^3.0.0",
+		"husky": "^9.1.7",
+		"lightningcss-cli": "^1.33.0",
+		"lint-staged": "^17.6.0",
+		"prettier": "^3.9.6",
+		"stylelint": "^17.16.0",
+		"stylelint-config-standard": "^40.0.0"
+	},
+	"lint-staged": {
+		"*": "prettier --ignore-unknown --write",
+		"*.css": "stylelint --fix"
+	}
 }
