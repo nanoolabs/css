@@ -1,6 +1,6 @@
 {
 	"name": "@nlbs/css",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"packageManager": "pnpm@12.8.1",
 	"description": "High-performance CSS foundation for Nanoo Labs",
 	"type": "module",
