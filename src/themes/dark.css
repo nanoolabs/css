@@ -57,10 +57,10 @@
      oklch(1 0 0 / 0.04) = 4% white = subtle hover glow on dark
      oklch(0 0 0 / 0.7) = 70% black = modal backdrop
      --------------------------------------------------------------- */
-  --color-hover: oklch(1 0 0 / 0.04); /* hover glow */
-  --color-active: oklch(1 0 0 / 0.08); /* active/pressed */
-  --color-overlay: oklch(0 0 0 / 0.7); /* modal backdrop */
-  --color-focus-ring: oklch(0.55 0.05 250 / 0.4); /* focus outline */
+  --color-hover: oklch(100% 0 0deg / 4%); /* hover glow */
+  --color-active: oklch(100% 0 0deg / 8%); /* active/pressed */
+  --color-overlay: oklch(0% 0 0deg / 70%); /* modal backdrop */
+  --color-focus-ring: oklch(55% 0.05 250deg / 40%); /* focus outline */
 
   /* ---------------------------------------------------------------
      STATUS
@@ -69,13 +69,13 @@
      oklch(L C H) = Lightness, Chroma (saturation), Hue (color angle)
      Hue 25 = red, 250 = blue, 155 = green
      --------------------------------------------------------------- */
-  --color-danger: oklch(0.65 0.2 25); /* red, errors */
-  --color-danger-hover: oklch(0.58 0.22 25); /* darker red */
-  --color-danger-subtle: oklch(0.65 0.2 25 / 0.12); /* 12% opacity */
-  --color-info: oklch(0.65 0.15 250); /* blue, info */
-  --color-info-subtle: oklch(0.65 0.15 250 / 0.12);
-  --color-success: oklch(0.7 0.19 155); /* green, success */
-  --color-success-subtle: oklch(0.7 0.19 155 / 0.12);
+  --color-danger: oklch(65% 0.2 25deg); /* red, errors */
+  --color-danger-hover: oklch(58% 0.22 25deg); /* darker red */
+  --color-danger-subtle: oklch(65% 0.2 25deg / 12%); /* 12% opacity */
+  --color-info: oklch(65% 0.15 250deg); /* blue, info */
+  --color-info-subtle: oklch(65% 0.15 250deg / 12%);
+  --color-success: oklch(70% 0.19 155deg); /* green, success */
+  --color-success-subtle: oklch(70% 0.19 155deg / 12%);
 
   /* ---------------------------------------------------------------
      ACCENT: Multi color system
@@ -84,15 +84,15 @@
      "subtle" = low-opacity background for badges/callouts.
      --------------------------------------------------------------- */
   --color-accent-orange: var(--accent-orange);
-  --color-accent-orange-subtle: oklch(0.75 0.18 50 / 0.12);
+  --color-accent-orange-subtle: oklch(75% 0.18 50deg / 12%);
   --color-accent-green: var(--accent-green);
-  --color-accent-green-subtle: oklch(0.85 0.22 155 / 0.12);
+  --color-accent-green-subtle: oklch(85% 0.22 155deg / 12%);
   --color-accent-blue: var(--accent-blue);
-  --color-accent-blue-subtle: oklch(0.72 0.15 250 / 0.12);
+  --color-accent-blue-subtle: oklch(72% 0.15 250deg / 12%);
   --color-accent-yellow: var(--accent-yellow);
-  --color-accent-yellow-subtle: oklch(0.88 0.16 85 / 0.12);
+  --color-accent-yellow-subtle: oklch(88% 0.16 85deg / 12%);
   --color-accent-red: var(--accent-red);
-  --color-accent-red-subtle: oklch(0.7 0.2 25 / 0.12);
+  --color-accent-red-subtle: oklch(70% 0.2 25deg / 12%);
   --color-accent-violet: var(--accent-violet);
-  --color-accent-violet-subtle: oklch(0.72 0.18 290 / 0.12);
+  --color-accent-violet-subtle: oklch(72% 0.18 290deg / 12%);
 }

@@ -38,33 +38,33 @@
     --color-border-subtle: var(--gray-2); /* light gray */
 
     /* State: oklch(0 0 0 / 0.04) = 4% black = subtle hover on light */
-    --color-hover: oklch(0 0 0 / 0.04);
-    --color-active: oklch(0 0 0 / 0.08);
-    --color-overlay: oklch(0 0 0 / 0.5); /* lighter backdrop */
-    --color-focus-ring: oklch(0.55 0.05 250 / 0.4);
+    --color-hover: oklch(0% 0 0deg / 4%);
+    --color-active: oklch(0% 0 0deg / 8%);
+    --color-overlay: oklch(0% 0 0deg / 50%); /* lighter backdrop */
+    --color-focus-ring: oklch(55% 0.05 250deg / 40%);
 
     /* Status */
-    --color-danger: oklch(0.55 0.22 25); /* darker red for contrast */
-    --color-danger-hover: oklch(0.48 0.24 25);
-    --color-danger-subtle: oklch(0.55 0.22 25 / 0.08); /* 8% opacity */
-    --color-info: oklch(0.55 0.18 250); /* darker blue */
-    --color-info-subtle: oklch(0.55 0.18 250 / 0.08);
-    --color-success: oklch(0.6 0.2 155); /* darker green */
-    --color-success-subtle: oklch(0.6 0.2 155 / 0.08);
+    --color-danger: oklch(55% 0.22 25deg); /* darker red for contrast */
+    --color-danger-hover: oklch(48% 0.24 25deg);
+    --color-danger-subtle: oklch(55% 0.22 25deg / 8%); /* 8% opacity */
+    --color-info: oklch(55% 0.18 250deg); /* darker blue */
+    --color-info-subtle: oklch(55% 0.18 250deg / 8%);
+    --color-success: oklch(60% 0.2 155deg); /* darker green */
+    --color-success-subtle: oklch(60% 0.2 155deg / 8%);
 
     /* Accent */
     --color-accent-orange: var(--accent-orange);
-    --color-accent-orange-subtle: oklch(0.75 0.18 50 / 0.08);
+    --color-accent-orange-subtle: oklch(75% 0.18 50deg / 8%);
     --color-accent-green: var(--accent-green);
-    --color-accent-green-subtle: oklch(0.85 0.22 155 / 0.08);
+    --color-accent-green-subtle: oklch(85% 0.22 155deg / 8%);
     --color-accent-blue: var(--accent-blue);
-    --color-accent-blue-subtle: oklch(0.72 0.15 250 / 0.08);
+    --color-accent-blue-subtle: oklch(72% 0.15 250deg / 8%);
     --color-accent-yellow: var(--accent-yellow);
-    --color-accent-yellow-subtle: oklch(0.88 0.16 85 / 0.08);
+    --color-accent-yellow-subtle: oklch(88% 0.16 85deg / 8%);
     --color-accent-red: var(--accent-red);
-    --color-accent-red-subtle: oklch(0.7 0.2 25 / 0.08);
+    --color-accent-red-subtle: oklch(70% 0.2 25deg / 8%);
     --color-accent-violet: var(--accent-violet);
-    --color-accent-violet-subtle: oklch(0.72 0.18 290 / 0.08);
+    --color-accent-violet-subtle: oklch(72% 0.18 290deg / 8%);
   }
 }
 
@@ -98,31 +98,31 @@
   --color-border-subtle: var(--gray-2);
 
   /* State */
-  --color-hover: oklch(0 0 0 / 0.04);
-  --color-active: oklch(0 0 0 / 0.08);
-  --color-overlay: oklch(0 0 0 / 0.5);
-  --color-focus-ring: oklch(0.55 0.05 250 / 0.4);
+  --color-hover: oklch(0% 0 0deg / 4%);
+  --color-active: oklch(0% 0 0deg / 8%);
+  --color-overlay: oklch(0% 0 0deg / 50%);
+  --color-focus-ring: oklch(55% 0.05 250deg / 40%);
 
   /* Status */
-  --color-danger: oklch(0.55 0.22 25);
-  --color-danger-hover: oklch(0.48 0.24 25);
-  --color-danger-subtle: oklch(0.55 0.22 25 / 0.08);
-  --color-info: oklch(0.55 0.18 250);
-  --color-info-subtle: oklch(0.55 0.18 250 / 0.08);
-  --color-success: oklch(0.6 0.2 155);
-  --color-success-subtle: oklch(0.6 0.2 155 / 0.08);
+  --color-danger: oklch(55% 0.22 25deg);
+  --color-danger-hover: oklch(48% 0.24 25deg);
+  --color-danger-subtle: oklch(55% 0.22 25deg / 8%);
+  --color-info: oklch(55% 0.18 250deg);
+  --color-info-subtle: oklch(55% 0.18 250deg / 8%);
+  --color-success: oklch(60% 0.2 155deg);
+  --color-success-subtle: oklch(60% 0.2 155deg / 8%);
 
   /* Accent */
   --color-accent-orange: var(--accent-orange);
-  --color-accent-orange-subtle: oklch(0.75 0.18 50 / 0.08);
+  --color-accent-orange-subtle: oklch(75% 0.18 50deg / 8%);
   --color-accent-green: var(--accent-green);
-  --color-accent-green-subtle: oklch(0.85 0.22 155 / 0.08);
+  --color-accent-green-subtle: oklch(85% 0.22 155deg / 8%);
   --color-accent-blue: var(--accent-blue);
-  --color-accent-blue-subtle: oklch(0.72 0.15 250 / 0.08);
+  --color-accent-blue-subtle: oklch(72% 0.15 250deg / 8%);
   --color-accent-yellow: var(--accent-yellow);
-  --color-accent-yellow-subtle: oklch(0.88 0.16 85 / 0.08);
+  --color-accent-yellow-subtle: oklch(88% 0.16 85deg / 8%);
   --color-accent-red: var(--accent-red);
-  --color-accent-red-subtle: oklch(0.7 0.2 25 / 0.08);
+  --color-accent-red-subtle: oklch(70% 0.2 25deg / 8%);
   --color-accent-violet: var(--accent-violet);
-  --color-accent-violet-subtle: oklch(0.72 0.18 290 / 0.08);
+  --color-accent-violet-subtle: oklch(72% 0.18 290deg / 8%);
 }

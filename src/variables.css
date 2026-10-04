@@ -16,19 +16,19 @@
      Lightness steps: 0 = near white, 12 = near  black
      Step 6 = approx 50% gray (middle point)
      --------------------------------------------------------------- */
-  --gray-0: oklch(0.99 0 0); /* near white, lightesst */
-  --gray-1: oklch(0.97 0 0); /* very light gray */
-  --gray-2: oklch(0.93 0 0); /* light gray, primary text on dark */
-  --gray-3: oklch(0.88 0 0); /* light gray, brand on dark */
-  --gray-4: oklch(0.82 0 0); /* medium light, borders on light */
-  --gray-5: oklch(0.74 0 0); /* medium gray, muted text */
-  --gray-6: oklch(0.64 0 0); /* mid gray, subtle elements */
-  --gray-7: oklch(0.53 0 0); /* medium dark, strong borders */
-  --gray-8: oklch(0.44 0 0); /* dark gray, strong borders on light */
-  --gray-9: oklch(0.35 0 0); /* dark, default borders on dark */
-  --gray-10: oklch(0.26 0 0); /* dark, mute bg, text on light */
-  --gray-11: oklch(0.18 0 0); /* very dark, surface on dark */
-  --gray-12: oklch(0.1 0 0); /* near black, bg on dark */
+  --gray-0: oklch(99% 0 0deg); /* near white, lightesst */
+  --gray-1: oklch(97% 0 0deg); /* very light gray */
+  --gray-2: oklch(93% 0 0deg); /* light gray, primary text on dark */
+  --gray-3: oklch(88% 0 0deg); /* light gray, brand on dark */
+  --gray-4: oklch(82% 0 0deg); /* medium light, borders on light */
+  --gray-5: oklch(74% 0 0deg); /* medium gray, muted text */
+  --gray-6: oklch(64% 0 0deg); /* mid gray, subtle elements */
+  --gray-7: oklch(53% 0 0deg); /* medium dark, strong borders */
+  --gray-8: oklch(44% 0 0deg); /* dark gray, strong borders on light */
+  --gray-9: oklch(35% 0 0deg); /* dark, default borders on dark */
+  --gray-10: oklch(26% 0 0deg); /* dark, mute bg, text on light */
+  --gray-11: oklch(18% 0 0deg); /* very dark, surface on dark */
+  --gray-12: oklch(10% 0 0deg); /* near black, bg on dark */
 
   /* ---------------------------------------------------------------
      SPACING: REM units
@@ -62,7 +62,7 @@
      Fallback ensure text renders even if custom font fails to load
      --------------------------------------------------------------- */
   --font-sans:
-    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui,
+    'Inter', -apple-system, blinkmacsystemfont, 'Segoe UI', system-ui,
     sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
 
@@ -96,10 +96,10 @@
      Used sparingly for status, interactive elements, and emphasis.
      each accent has its own scale for backgrounds and text.
      --------------------------------------------------------------- */
-  --accent-orange: oklch(0.75 0.18 50); /* primary accent */
-  --accent-green: oklch(0.85 0.22 155); /* success, positive */
-  --accent-blue: oklch(0.72 0.15 250); /* info, links */
-  --accent-yellow: oklch(0.88 0.16 85); /* warnings */
-  --accent-red: oklch(0.7 0.2 25); /* danger, errors */
-  --accent-violet: oklch(0.72 0.18 290); /* special, brand */
+  --accent-orange: oklch(75% 0.18 50deg); /* primary accent */
+  --accent-green: oklch(85% 0.22 155deg); /* success, positive */
+  --accent-blue: oklch(72% 0.15 250deg); /* info, links */
+  --accent-yellow: oklch(88% 0.16 85deg); /* warnings */
+  --accent-red: oklch(70% 0.2 25deg); /* danger, errors */
+  --accent-violet: oklch(72% 0.18 290deg); /* special, brand */
 }
