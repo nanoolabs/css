@@ -54,7 +54,7 @@ src/
 ├── tokens.css           # Entry: variables + themes only
 ├── main.css             # Entry: full package (reset + tokens + components)
 ├── reset.css            # Minimal reset
-├── variables.css        # Primitives: gray scale, spacing, radius, typography
+├── variables.css        # Primitives: gray scale, spacing, radius, shadow, border, duration, typography
 ├── aliases.css          # Backward compatibility (--nl-* tokens)
 ├── themes/
 │   ├── dark.css         # Semantic tokens (default)
