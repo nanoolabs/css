@@ -96,6 +96,11 @@
 	--shadow-lg: 0 12px 32px oklch(0% 0 0deg / 12%); /* modals */
 
 	/* ---------------------------------------------------------------
+     BORDER: Width + style
+     --------------------------------------------------------------- */
+	--border-hairline: 1px solid var(--color-border);
+
+	/* ---------------------------------------------------------------
      ACCENT COLORS: Multi-color system
 
      Used sparingly for status, interactive elements, and emphasis.

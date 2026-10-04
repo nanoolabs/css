@@ -1,6 +1,6 @@
 .nl-card {
-	background-color: var(--nl-color-canvas-soft);
-	border: var(--nl-hairline);
-	padding: var(--nl-space-2xl);
-	border-radius: var(--nl-radius-md);
+	background-color: var(--color-bg-surface);
+	border: var(--border-hairline);
+	padding: var(--spacing-2xl);
+	border-radius: var(--radius-md);
 }
