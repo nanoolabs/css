@@ -9,19 +9,19 @@
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 /* Base: antialiased text, dark bg, system font stack */
 html {
-	background: var(--color-bg, #0a0a0a);
-	color: var(--color-text, #e5e5e5);
-	font-family: var(--font-sans, system-ui, sans-serif);
-	font-size: 16px;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
+  background: var(--color-bg, #0a0a0a);
+  color: var(--color-text, #e5e5e5);
+  font-family: var(--font-sans, system-ui, sans-serif);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Images: block display prevent weird inline gap */
@@ -30,8 +30,8 @@ picture,
 video,
 canvas,
 svg {
-	display: block;
-	max-width: 100%;
+  display: block;
+  max-width: 100%;
 }
 
 /* Forms: inherit font from parent instead of browser default */
@@ -39,7 +39,7 @@ input,
 button,
 textarea,
 select {
-	font: inherit;
+  font: inherit;
 }
 
 /* Headings: prevent overflow from long word */
@@ -49,5 +49,5 @@ h3,
 h4,
 h5,
 h6 {
-	overflow-wrap: break-word;
+  overflow-wrap: break-word;
 }
